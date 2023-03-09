@@ -3,7 +3,9 @@ class ListaPosts{
         this.arr=[];
     }
     agregarPost(Post){
-        this.arr.push(Post);
+        if(Post.value!=null){
+            this.arr.push(Post);
+        }
     }
     mostrarPosts(lista)
     {
