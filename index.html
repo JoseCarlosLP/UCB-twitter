@@ -1,15 +1,27 @@
+<!DOCTYPE html>
 <html>
-  <body>
-    <h1>Sumador</h1>
-    <form id="sumar-form">
-      <label for="primer-numero">Primer número:</label>
-      <input type="number" id="primer-numero" />
-      <label for="segundo-numero">Segundo número:</label>
-      <input type="number" id="segundo-numero" />
-      <input type="submit" value="Sumar" id="sumar-button" />
-    </form>
-    <div id="resultado-div"></div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UCB TWITTER</title>
+</head>
 
-    <script type="module" src="./src/presenter.js"></script>
-  </body>
+<body>
+  <h1> UCB TWITTER </h1>
+  <form id="form-publicarPost">
+    <h3>POST: </h3>
+    <label>Titulo: </label>
+    <input type="text" id="post_titulo">
+    <p> </p>
+    <label>Descripcion: </label>
+    <textarea type="text" id="post_det" ></textarea>
+    <p> </p>
+    <button type="submit" id="btn_publicarPost">PUBLICAR</button>
+  </form>
+  <p> </p>
+  <h3> POSTS DE LA PAGINA : </h3>
+  <ul id="lista"> </ul>
+  <script type="module" src="./src/presenter.js"></script>
+</body>
 </html>
