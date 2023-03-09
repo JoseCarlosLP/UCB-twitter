@@ -3,7 +3,7 @@ class ListaPosts{
         this.arr=[];
     }
     agregarPost(Post){
-        if(Post.value!=null){
+        if(Post.titulo!=null){
             this.arr.push(Post);
         }
     }
@@ -13,7 +13,9 @@ class ListaPosts{
             let post=this.arr[i];
             const li=document.createElement('li');
             li.innerHTML = "<b> Titulo: </b>" + post.titulo;
-            li.innerHTML += "<br> <b> Detalle : </b>" + post.detalle;
+            if (post.detalle != "") {
+                li.innerHTML += "<br> <b> Detalle : </b>" + post.detalle;
+              }
             lista.appendChild(li);
         }
         return lista;
