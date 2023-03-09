@@ -5,6 +5,7 @@ class Post{
             return null;
         }
         else{
+                
             this.titulo=titulo;
             this.detalle=detalle;
         }
